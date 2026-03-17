@@ -1,0 +1,15 @@
+{
+  "source": "Tempel, Stoica, Saar 2014 SDSS DR8 Bisous catalog",
+  "total_filaments": 15421,
+  "total_with_galaxies": 15421,
+  "selection_funnel": {
+    "L_ge_15": 2306,
+    "plus_z_01_02": 600,
+    "plus_ang_sep_05": 599,
+    "plus_ngal_ge_15_both": 354,
+    "plus_kids_footprint": 19,
+    "relaxed_ngal_ge_10_both": 558,
+    "relaxed_plus_kids": 28
+  },
+  "note": "Per-filament details are in data/filament_candidates.json (558 passing candidates)"
+}

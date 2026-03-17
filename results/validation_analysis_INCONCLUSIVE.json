@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-03-17",
+  "verdict": "INCONCLUSIVE",
+  "reason": "ESG instability: per-filament S/N insufficient for stable mu_IR anchoring with 3 training filaments",
+  "stacked_signal": {
+    "n_filaments": 11,
+    "mean_gamma_t": -0.00028575404662405763,
+    "mean_error": 0.0010336751634596752,
+    "stacked_SNR": 3.8995657468805556
+  },
+  "predicted_summary": {
+    "mean_A_fil": -0.006692463837048457,
+    "mu_IR": 1.0,
+    "note": "placeholder mu_IR; anchoring failed ESG"
+  },
+  "null_tests": "All 4 passing (first-Jet, isotropy, scrambled, scale robustness)",
+  "recommendation": "Increase training sample or use hierarchical Bayesian anchoring"
+}

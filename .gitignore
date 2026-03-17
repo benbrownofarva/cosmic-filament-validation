@@ -1,0 +1,23 @@
+# Large data files (download via scripts)
+data/sdss_filaments/
+data/kids_lensing/
+data/des_y3/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
