@@ -10,7 +10,10 @@
 | Primary training set (Tier A) | 19 filaments in KiDS-North footprint |
 | Relaxed training set (Tier A+B) | 28 filaments in KiDS-North footprint |
 | Observed shear profiles | 11 filaments with extracted gamma_t(r_perp) |
+| g_T matched-filter result | 0.54 +/- 0.33 (1.7-sigma, consistent with theory at 1.05-sigma) |
 | Dataset freeze date | 2026-03-17 |
+
+**See [ANALYSIS.md](ANALYSIS.md) for the full g_T measurement writeup.**
 
 ---
 
@@ -315,6 +318,7 @@ is insufficient for stable 3-filament anchoring at the observed signal level
 ```
 .
 ├── README.md                          # This file
+├── ANALYSIS.md                        # g_T measurement writeup
 ├── contracts/
 │   └── COSMIC_FILAMENT_VALIDATION_CONTRACT_v1.md  # Pre-registered protocol
 ├── data/
@@ -328,12 +332,14 @@ is insufficient for stable 3-filament anchoring at the observed signal level
 ├── pipeline/
 │   ├── rt_filament_forward_model.py   # Forward model (Steps A-D)
 │   ├── extract_wl_shear.py           # KiDS-1000 WL shear extraction
-│   └── run_full_validation.py         # End-to-end validation orchestrator
+│   ├── run_full_validation.py         # End-to-end validation orchestrator
+│   └── g_T_analysis.py               # g_T zero-param prediction + matched filter
 └── results/
     ├── observed_shear_profiles.json   # Extracted gamma_t profiles (11 filaments)
     ├── pipeline_results_dev.json      # Forward model predictions (mu_IR=1.0)
-    ├── selection_funnel.json          # Full 15,421-filament selection analysis
-    └── validation_analysis_INCONCLUSIVE.json  # Final verdict and diagnostics
+    ├── selection_funnel.json          # Selection funnel summary
+    ├── g_T_analysis.json              # g_T measurement results
+    └── validation_analysis_INCONCLUSIVE.json  # Validation verdict and diagnostics
 ```
 
 ---
